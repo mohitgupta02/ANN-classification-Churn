@@ -7,16 +7,16 @@ import pickle
 
 ### Load the ANN train model ,scaler pickle,onehot
 
-model=tf.keras.models.load_model('/home/mohitgupta0205/Desktop/ML/model.h5')
+model=tf.keras.models.load_model('model.h5')
 
 ### load encoder and scaler
-with open('/home/mohitgupta0205/Desktop/ML/one_hot_encoder_geo.pkl','rb') as file:
+with open('one_hot_encoder_geo.pkl','rb') as file:
     label_encoder_geo= pickle.load(file)
 
-with open('/home/mohitgupta0205/Desktop/ML/label_encoder_gender.pkl','rb') as file:
+with open('label_encoder_gender.pkl','rb') as file:
     label_encoder_gender= pickle.load(file)
 
-with open('/home/mohitgupta0205/Desktop/ML/scaler.pkl','rb') as file:
+with open('scaler.pkl','rb') as file:
     scaler= pickle.load(file)
 
 ##Streamlit app
